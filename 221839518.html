@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>221839518 — Career Plan & Interests</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    :root{
+      --bg:#0f0f10;
+      --card: rgba(40,40,40,0.86);
+      --muted:#cfcfcf;
+      --accent:#9fb4c8;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; font-family:"Segoe UI",Arial,sans-serif; color:var(--muted);}
+    body{
+      background: url('images/me.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position:relative;
+      min-height:100vh;
+    }
+    /* dark overlay */
+    body::before{
+      content:""; position:absolute; inset:0;
+      background:linear-gradient(180deg, rgba(6,6,6,0.65), rgba(6,6,6,0.75));
+      z-index:0;
+    }
+
+    .wrap{position:relative; z-index:1; max-width:1000px; margin:40px auto; padding:28px;}
+
+    header.card{
+      background:var(--card); border-radius:12px; padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.6);
+      margin-bottom:20px; transition:transform .18s ease;
+    }
+    header.card:hover{transform:translateY(-4px)}
+    h1{margin:0 0 6px 0; color:#f4f4f4; font-size:28px}
+    p.lead{margin:0; color:#ddd; line-height:1.6}
+
+    .grid{display:grid; grid-template-columns:1fr 380px; gap:20px; align-items:start;}
+    @media(max-width:900px){ .grid{grid-template-columns:1fr} }
+
+    .card{
+      background:var(--card); border-radius:12px; padding:20px; box-shadow:0 8px 20px rgba(0,0,0,0.5);
+      transition:transform .18s ease;
+    }
+    .card:hover{transform:translateY(-4px)}
+    h2{margin:0 0 12px 0; color:#e9eef3}
+
+    .links ul{padding-left:18px; margin:0}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{color:#fff}
+
+    /* timeline */
+    .timeline{position:relative; padding-left:28px;}
+    .timeline::before{
+      content:""; position:absolute; left:8px; top:0; bottom:0; width:3px; background:linear-gradient(#4b4b4b,#2a2a2a);
+      border-radius:2px;
+    }
+    .step{position:relative; margin:18px 0 18px 12px; padding:12px 12px 12px 18px; background:rgba(255,255,255,0.02); border-radius:8px;}
+    .step::before{
+      content:""; position:absolute; left:-22px; top:14px; width:14px; height:14px; border-radius:50%; background:var(--accent);
+      box-shadow:0 0 0 4px rgba(159,180,200,0.08);
+    }
+    .year{font-weight:700; color:#f1f1f1; margin-bottom:6px}
+    ul.clean{margin:8px 0 0 18px; color:#dcdcdc}
+
+    /* slim metrics box */
+    .metrics{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:14px; border-radius:10px}
+    .metrics li{margin:8px 0; color:#dcdcdc}
+
+    footer.card{margin-top:18px; text-align:center; color:#bbb; font-size:13px; background:var(--glass)}
+
+    /* small badges */
+    .pill{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.03); color:var(--muted); font-size:13px; margin-right:8px}
+
+    /* subtle button-like link */
+    .cta{display:inline-block; margin-top:10px; padding:10px 14px; background:linear-gradient(180deg,#2b2f33,#1e2022); border-radius:8px; color:var(--accent); text-decoration:none; border:1px solid rgba(255,255,255,0.03)}
+    .cta:hover{transform:translateY(-3px); box-shadow:0 10px 20px rgba(0,0,0,0.6)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="card">
+      <h1>221839518 — Career Roadmap & Strategic Plan</h1>
+      <p class="lead">
+        A focused plan that blends Cybersecurity, Quantitative Finance, and Agribusiness to create social impact,
+        sustainable revenue, and a pathway into corporate leadership. This document shows the certifications, job
+        milestones, degree plan, and a 10-year timeline that I will follow.
+      </p>
+    </header>
+
+    <div class="grid">
+      <!-- left (main plan & timeline) -->
+      <div>
+        <div class="card">
+          <h2>Immediate objectives (next 12 months)</h2>
+          <p><span class="pill">Priority</span> Obtain entry-level cybersecurity credibility and land a remote SOC Analyst role.</p>
+          <ul class="clean">
+            <li>Study for and pass <strong>CompTIA Security+</strong> (baseline security knowledge, policies, network security).</li>
+            <li>Apply for internships / remote SOC Analyst junior roles while studying.</li>
+            <li>Build a small practical portfolio (virtual labs, Splunk/ELK exercises, incident reports).</li>
+          </ul>
+          <a class="cta" href="#" onclick="alert('Use this space to link your CV or portfolio later')">Quick action: CV + Apply</a>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>Next-level technical accreditation (1–3 years)</h2>
+          <p>Deepen offensive & defensive skills to become a versatile security professional.</p>
+          <ul class="clean">
+            <li>Complete <strong>OSCP</strong> (Practical penetration testing — proven technical skill).</li>
+            <li>Simultaneously grow scripting & automation skills (Python, bash) and learn cloud basics (AWS/GCP fundamentals).</li>
+            <li>Target mid-level infosec roles (Red Team/Blue Team), contract pentests, or boutique security consulting.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>Academic & trading pathway (3–5 years)</h2>
+          <p>Formalize quantitative skills to transition into quant trading and agribusiness finance roles.</p>
+          <ul class="clean">
+            <li>Enroll for <strong>BCom in Quantitative Finance</strong> next academic year.</li>
+            <li>Take modules: Financial Mathematics, Econometrics, Time Series, Derivatives, and Programming for Finance.</li>
+            <li>Apply quant models to agricultural commodity pricing and local market data.</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>10-Year Strategic Timeline</h2>
+          <div class="timeline">
+            <div class="step">
+              <div class="year">Year 1</div>
+              <div>Pass CompTIA Security+. Gain entry-level SOC Analyst role (remote). Build incident handling portfolio.</div>
+            </div>
+
+            <div class="step">
+              <div class="year">Years 2–3</div>
+              <div>Train for and pass OSCP. Move into mid-level security positions. Freelance penetration testing and consulting.</div>
+            </div>
+
+            <div class="step">
+              <div class="year">Years 3–5</div>
+              <div>Start BCom in Quantitative Finance; contribute security expertise to fintech/agritech projects. Build small prop trading strategies.</div>
+            </div>
+
+            <div class="step">
+              <div class="year">Years 6–8</div>
+              <div>Transition into quantitative trading roles (institutional or prop desk). Launch AgriLink pilot projects linking farmers to buyers.</div>
+            </div>
+
+            <div class="step">
+              <div class="year">Years 9–10</div>
+              <div>Scale AgriLink operations, grow a small team, and aim for leadership (Head of Security / Head of Data & Trading Operations).</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h2>How this creates community impact & revenue</h2>
+          <ul class="clean">
+            <li><strong>Jobs for youth:</strong> digital agents, logistics, junior analysts, and developers.</li>
+            <li><strong>Farmer uplift:</strong> better market access & price discovery via data-driven demand signals.</li>
+            <li><strong>Revenue model:</strong> transaction fees, subscription analytics, premium buyer tools, and consulting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- right (quick links & metrics) -->
+      <aside>
+        <div class="card metrics">
+          <h2>Quick Goals (next 6 months)</h2>
+          <ul>
+            <li>CompTIA Security+ — study plan + exam booked</li>
+            <li>Apply to 25 SOC roles / internships</li>
+            <li>Setup Splunk/ELK home lab</li>
+            <li>Complete two practical OSINT exercises</li>
+          </ul>
+        </div>
+
+        <div class="card metrics" style="margin-top:14px">
+          <h2>Key milestones to track</h2>
+          <ul>
+            <li>Certifications obtained (Security+, OSCP)</li>
+            <li>Job offers / interviews / contracts</li>
+            <li>BCom acceptance & grades</li>
+            <li>AgriLink pilot customers / transactions</li>
+          </ul>
+        </div>
+
+        <div class="card metrics" style="margin-top:14px">
+          <h2>Professional Links</h2>
+          <ul>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.credly.com" target="_blank">Certifications</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="card" style="margin-top:18px">
+      <div>Plan created by <strong>Cherry — 221839518</strong>. Update this plan quarterly and track progress in a simple spreadsheet.</div>
+    </footer>
+  </div>
+
+</body>
+</html>
